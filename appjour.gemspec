@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ["README.rdoc"]
   s.files = ["README.rdoc", "Rakefile", "bin/appjour", "lib/appjour", "lib/appjour/version.rb", "lib/appjour.rb"]
   s.has_rdoc = true
-  s.homepage = %q{http://github.com/lachie/appjour}
+  s.homepage = %q{http://github.com/sebdens/appjour}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.0.1}
   s.summary = %q{Announce an app over bonjour}
