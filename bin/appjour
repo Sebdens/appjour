@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+
+# $:.unshift File.dirname(__FILE__)+"/../lib"
+
+require "rubygems"
+require "appjour"
+
+
+help    = ARGV.delete("-h")
+
+
+name = ARGV.shift
+port = ARGV.shift
+
+if name && !port
+  begin
+    port = Integer(name)
+    name = ENV["USER"]
+  rescue ArgumentError
+    port = nil
+  end
+end
+
+if help
+  puts <<-EOH
+  appjour                  look for apps
+  appjour [NAME]           open the app NAME
+  appjour [NAME] [PORT]    publish your app as NAME on PORT
+  appjour [PORT]           publish your app as $USER on PORT
+
+  EOH
+elsif name && port
+  Appjour.publish(name, port)
+elsif name
+  Appjour.open(name)
+else
+  Appjour.list
+end
