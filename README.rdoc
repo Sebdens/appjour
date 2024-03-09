@@ -5,7 +5,7 @@ Publish your app in the ether using Bonjour.
 == Installation
 
   sudo gem install dnssd
-  sudo gem install lachie-appjour --source=http://gems.github.com
+  sudo gem install Sebdens-appjour --source=http://gems.github.com
   
 == Usage
 
