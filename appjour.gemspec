@@ -5,12 +5,12 @@ Gem::Specification.new do |s|
   s.specification_version = 2 if s.respond_to? :specification_version=
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Lachie"]
+  s.authors = ["Sebdens"]
   s.autorequire = %q{appjour}
   s.date = %q{2008-06-18}
   s.default_executable = %q{appjour}
   s.description = %q{Announce an app over bonjour}
-  s.email = %q{lachiec@gmail.com}
+  s.email = %q{sebdens@gmail.com}
   s.executables = ["appjour"]
   s.extra_rdoc_files = ["README.rdoc"]
   s.files = ["README.rdoc", "Rakefile", "bin/appjour", "lib/appjour", "lib/appjour/version.rb", "lib/appjour.rb"]
